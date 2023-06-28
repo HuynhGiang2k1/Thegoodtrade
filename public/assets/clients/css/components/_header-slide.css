@@ -1,0 +1,21 @@
+.slide-images{
+  position: relative;
+  min-width: 100%;
+  height:800px;
+}
+
+.slide-images-content{
+  display: flex;
+  overflow: hidden;
+  min-width: 100%;
+  height: 100%;
+}
+
+
+.slide-images img{
+  object-fit: cover;
+  min-width: 100%;
+  height: 100%;
+  transition: all 0.5s ease;
+}
+

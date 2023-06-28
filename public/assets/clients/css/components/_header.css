@@ -1,0 +1,317 @@
+:root {
+    --header-height: 70px;
+}
+
+.header {
+    width: 100%;
+    background: rgba(28, 38, 47, 0.5);
+    height: -var(--header-height);
+    z-index: 3000;
+    position: fixed;
+    transform: translate3d(0, 0, 0);
+    transition: transform 1s;
+}
+
+.header.header-end {
+    transform: translate3d(0, calc(var(--header-height) * -2), 0);
+}
+
+.header.header-start {
+    transform: translate3d(0, 0, 0);
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 var(--header-height);
+    width: 100%;
+    height: var(--header-height);
+}
+
+.header .container .header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--header-height);
+    width: 25%;
+    overflow: hidden;
+}
+
+.header .container .header-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    height: 100%;
+}
+
+.header .container .header-menu .header-menu-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    height: 100%;
+    min-width: 500px;
+}
+
+.header .container .header-menu .header-menu-left .header-menu-left-item {
+    position: relative;
+    padding-right: 14px;
+    height: 100%;
+    color: #ccc;
+    min-width: 60px;
+}
+
+.header .container .header-menu .header-menu-left .header-menu-left-item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.header .container .header-menu .header-menu-left .header-menu-left-item a:hover {
+    color: #fff;
+}
+
+.header .container .header-menu .header-menu-left .header-menu-left-item a:hover~.header-menu-left-item-child {
+    max-height: 500px;
+}
+
+.header .container .header-menu .header-menu-left .header-menu-left-item a .header-menu-left-item-name {
+    padding-right: 4px;
+    font-size: 15px;
+    position: relative;
+}
+
+.header .container .header-menu .header-menu-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 5px;
+    margin-right: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.header .container .header-menu .header-menu-search input {
+    align-items: center;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.header .container .header-menu .header-menu-search .header-menu-search-icon {
+    color: #ccc;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.header .container .header-menu .header-menu-search .header-menu-search-icon :hover {
+    color: #888;
+}
+
+.header .container .header-menu .header-menu-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 15px;
+}
+
+.header .container .header-menu .header-menu-right .header-menu-right-account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10px;
+    color: #ccc;
+}
+
+.header .container .header-menu .header-menu-right .header-menu-right-account:first-child{
+    padding-bottom: 8px;
+}
+
+.header .container .header-menu .header-menu-right .header-menu-right-account:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.header .container .header-menu .header-menu-right .header-menu-right-avatar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    cursor: pointer;
+}
+
+.header .container .header-menu .header-menu-right .header-menu-right-avatar img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+
+.header .container .header-menu .header-menu-right .header-menu-right-avatar img:hover {
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.header .container .header-menu .header-menu-right .header-menu-right-avatar:hover~.header-menu-right-menu-wrap {
+    max-height: 500px;
+}
+
+.header .container .header-menu .header-menu-right .header-menu-right-avatar:hover::after {
+    position: absolute;
+    content: '';
+    display: inline;
+    top: 100%;
+    right: 40%;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+}
+
+.header .container .header-menu .header-menu-right .header-menu-right-icon {
+    color: #ccc;
+}
+
+.header .container .header-menu .header-menu-right .header-menu-right-icon:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.header .container .header-menu .header-menu-right .header-menu-right-menu-wrap {
+    top: 120%;
+    right: 10%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 7px #000;
+    max-height: 0;
+    width: 300px;
+    transition: max-height 0.6s;
+}
+
+.header .container .header-menu .header-menu-right .header-menu-right-menu-wrap:hover {
+    max-height: 500px;
+}
+
+.header .container .header-menu .header-menu-right .header-menu-right-menu-wrap .header-menu-right-menu {
+    padding: 10px;
+    margin: 10px;
+    height: 100%;
+}
+
+.header .container .header-menu .header-menu-right .header-menu-right-menu-wrap .header-menu-right-menu .header-menu-right-menu-user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.header .container .header-menu .header-menu-right .header-menu-right-menu-wrap .header-menu-right-menu .header-menu-right-menu-user img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+}
+
+.header .container .header-menu .header-menu-right .header-menu-right-menu-wrap .header-menu-right-menu .header-menu-right-menu-user h2 {
+    color: #ccc;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.header .container .header-menu .header-menu-right .header-menu-right-menu-wrap .header-menu-right-menu .header-menu-right-menu-user h2:hover {
+    color: #d1a6a6;
+}
+
+.header .container .header-menu .header-menu-right .header-menu-right-menu-wrap .header-menu-right-menu hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 10px 0 10px;
+}
+
+.header .container .header-menu .header-menu-right .header-menu-right-menu-wrap .header-menu-right-menu a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.header .container .header-menu .header-menu-right .header-menu-right-menu-wrap .header-menu-right-menu a:hover {
+    color: #ccc;
+    cursor: pointer;
+}
+
+.header .container .header-menu .header-menu-right .header-menu-right-menu-wrap .header-menu-right-menu a .header-menu-right-menu-icon {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.header .container .header-menu .header-menu-right .header-menu-right-menu-wrap .header-menu-right-menu a span {
+    font-size: 16px;
+}
+
+
+.header-menu-left-item-child {
+    position: absolute;
+    top: 100%;
+    background-color: rgba(28, 38, 47, 0.5);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 15px;
+    max-height: 0;
+    overflow: hidden;
+    width: 200px;
+    transition: max-height 0.5s;
+}
+
+
+
+.header-menu-left-item-child:hover {
+    max-height: 500px;
+}
+
+.header-menu-left-item-child .header-menu-left-item-child-item {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: #ccc;
+    padding: 5px 10px 10px;
+}
+
+.header-menu-left-item-child a {
+    position: relative;
+}
+
+.underlined::after {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: 110%;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #fff;
+    transition: width 0.4s;
+}
+
+.underlined:hover::after {
+    width: 100%;
+}

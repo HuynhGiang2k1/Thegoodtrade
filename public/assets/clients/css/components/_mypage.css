@@ -1,0 +1,183 @@
+.mypage-container{
+    display: flex;
+    /* margin: 0 auto; */
+    padding: 100px 70px 20px;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    min-width: 1200px;
+}
+
+.sidebar{
+    padding: 20px 10px 0 20px;
+    /* margin-right: 30px; */
+    border-right: 1px solid #ccc;
+    width: 200px;
+}
+
+.sidebar-item{
+    margin-bottom: 15px;
+    padding-left: 10px;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+    align-items: center;
+    height: 30px;
+}
+
+.sidebar-item:hover{
+    font-weight: 500;
+}
+/* -----------------------My Information -------------------------- */
+
+.information{
+    margin: 20px 0 0 30px;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0.2px 1px 10px rgb(95, 93, 93);
+    background-color: #fff;
+    max-width: 800px;
+}
+
+.information p{
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: red;
+}
+
+.information table tr{
+    height: 40px;
+
+}
+
+.information table tr th{
+    text-align: right;
+    padding-right: 10px;
+    font-weight: normal;
+}
+
+.information table tr th label{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.information table tr td input{
+    padding: 4px 6px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+    font-size: 15px;
+    width: 300px;
+    height:26px;
+}
+
+.information table tr td .information-img{
+    border: none;
+    cursor: pointer;
+    height: 30px;
+}
+
+.information-btn{
+    margin-top:10px;
+    text-align: center;
+    width:100%;
+}
+
+.information-btn button{
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius:4px;
+    background-color: rgb(197, 23, 23);
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.information-btn button:hover{
+    background-color: rgb(238, 11, 11);
+
+}
+
+/* -------------------Đơn hàng-------------------- */
+
+.single-menu{
+    display: flex;
+    align-items: center;
+    margin: 20px 0 0 20px;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0.2px 1px 10px rgb(180, 166, 166);
+    background-color: #fff;
+    max-width: 1000px;
+}
+
+.single-menu-title{
+    border-radius: none;
+    box-shadow: none;
+    background-color: #f5f5f5;
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: #fff;
+    text-align: left;
+}
+
+.single-menu img{
+    border-radius:10px
+}
+
+.single-menu-img{
+    width:100px;
+    text-align: center;
+}
+
+.single-menu-name{
+    padding-left: 10px;
+    font-size: 15px;
+    line-height:24px;
+    width:200px;
+}
+
+.single-menu-phone{
+    padding-left: 5px;
+    font-size: 15px;
+    line-height:24px;
+    width:100px;
+}
+
+.single-menu-address{
+    padding-left: 5px;
+    font-size: 15px;
+    line-height:24px;
+    width:200px;
+}
+
+.single-menu-time{
+    padding-left: 5px;
+    font-size: 14px;
+    line-height:24px;
+    width:150px;
+}
+
+.single-menu-state{
+    padding-left: 10px;
+    font-size: 15px;
+    line-height:24px;
+    width: 100px;
+}
+
+.single-menu-price{
+    display: inline-block;
+    padding-left: 5px;
+    font-size: 15px;
+    line-height:24px;
+    font-weight: 500;
+    text-align: center;
+    width:120px;
+}
+
+.single-menu-trash i:hover{
+    cursor: pointer;
+    color: #ccc;
+}

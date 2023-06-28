@@ -1,0 +1,104 @@
+.footer {
+    width: 100%;
+    height: 420px;
+    -webkit-tap-highlight-color: transparent;
+    overflow: hidden;
+    background-image: url(//cdn.shopify.com/s/files/1/0681/9847/t/6/assets/footer_bg.jpg?v=10927678236480231526);
+    background-size: cover;
+    font-size: 14px;
+}
+.footer .container {
+    display: flex;
+    padding: 55px 0;
+    margin: 24px;
+}
+.footer .container .footer-left {
+    width: 40%;
+}
+.footer .container .footer-left .footer-left-follow {
+    display: block;
+    height: 40px;
+    user-select: none;
+}
+.footer .container .footer-left .footer-left-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    height: 80px;
+}
+.footer .container .footer-left .footer-left-wrap .footer-left-item {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    align-content: center;
+    height: 60px;
+    width: 60px;
+    border: 1px solid #999;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.footer .container .footer-left .footer-left-wrap .footer-left-item .footer-left-item-item {
+    margin: auto;
+    font-size: 30px;
+}
+.footer .container .footer-left .footer-left-wrap .footer-left-item:hover {
+    border: 1px solid #3e4ea8;
+    color: #3e4ea8;
+}
+.footer .container .footer-right {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+.footer .container .footer-right .footer-right-item {
+    display: flex;
+    height: 50px;
+    width: 100%;
+}
+.footer .container .footer-right .footer-right-item .footer-right-top-item {
+    margin-right: 20px;
+}
+.footer .container .footer-right .footer-right-item .footer-right-top-item:hover {
+    color: #3e4ea8;
+}
+.footer .container .footer-right .footer-right-item h1 {
+    display: block;
+    padding-top: 10px;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 1.5rem;
+    user-select: text;
+}
+.footer .container .footer-right .footer-right-item input {
+    padding: 10px;
+    margin-right: 10px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    height: 40px;
+    width: 400px;
+    font-size: 14px;
+}
+.footer .container .footer-right .footer-right-item button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    height: 40px;
+    width: 100px;
+    font-size: 16px;
+    background-color: #7c4db9;
+}
+.footer .container .footer-right .footer-right-item button:hover {
+    background-color: #9f72db;
+}
+.footer .container .footer-right .footer-right-item .footer-right-bottom-item {
+    padding-right: 20px;
+    height: 100%;
+    width: 100%;
+}
+.footer .container .footer-right .footer-right-item .footer-right-bottom-item img {
+    height: 30px;
+    width: 40px;
+}
